@@ -1,0 +1,3 @@
+[submodule "src/galleria/static/galleria"]
+	path = src/galleria/static/galleria
+	url = https://github.com/aino/galleria.git
