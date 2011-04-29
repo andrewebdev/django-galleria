@@ -8,6 +8,14 @@ h2. Requirements
 
 Django 1.3+ or, if you are using an older version of django, the django-staticfiles app (haven't tested the latter).
 
+h2. Git Submodules
+
+This Git repo makes use of submodules. The galleria project is included as a submodule within this repo. So after you cloned this project, you need to run the following:
+bc.. git submodule init
+git submodule update
+
+p. That will pull the latest galleria code into the static dir.
+
 h2. Usage
 
 After installing, you need to add @'galleria'@ to your @INSTALLED_APPS@ settings, as well as @'galleria.context_processors.galleria_urls'@ to your @TEMPLATE_CONTEXT_PROCESSORS@.
