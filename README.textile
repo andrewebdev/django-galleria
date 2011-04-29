@@ -25,4 +25,4 @@ h2. Example HTML
 bc.. <script src="{{ GALLERIA_SCRIPT }}" type="text/javascript" />
 <script type="text/javascript"> Galleria.loadTheme('{{ GALLERIA_THEME }}'); </script>
 
-p. After that you can just follow the normal "Link to galleria instructions here":http://galleria.aino.se/docs/1.2/getting_started/quick_start/
+p. After that you can just follow the normal "galleria instructions here":http://galleria.aino.se/docs/1.2/getting_started/quick_start/
