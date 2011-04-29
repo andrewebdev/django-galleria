@@ -1,0 +1,28 @@
+h1. django-galleria
+
+Galleria is a beautiful javascript gallery for your webiste, and django-galleria is a django application that helps you to add django galleria to your existing django project.
+
+The main motivation for starting this app was because I use zc.buildout to install all sorts of requirements for my projects, and I couldn't be bothered to manually download the galleria app every time I wanted to use it in a project. Now I just include the django-galleria app in my required eggs, and everything get's done for me.
+
+h2. Requirements
+
+Django 1.3+ or, if you are using an older version of django, the django-staticfiles app (haven't tested the latter).
+
+h2. Usage
+
+After installing, you need to add @'galleria'@ to your @INSTALLED_APPS@ settings, as well as @'galleria.context_processors.galleria_urls'@ to your @TEMPLATE_CONTEXT_PROCESSORS@.
+
+This gives you the following Context Variables to work with:
+
+* GALLERIA_URL - The root url where the galleria script and themes are located
+* GALLERIA_SCRIPT - The url to galleria.js
+* GALLERIA_THEME - The url to the default galleria theme
+
+Each one of those variables can be changed in your settings.py file if you wish to do so.
+
+h2. Example HTML
+
+bc.. <script src="{{ GALLERIA_SCRIPT }}" type="text/javascript" />
+<script type="text/javascript"> Galleria.loadTheme('{{ GALLERIA_THEME }}'); </script>
+
+p. After that you can just follow the normal "Link to galleria instructions here":http://galleria.aino.se/docs/1.2/getting_started/quick_start/
